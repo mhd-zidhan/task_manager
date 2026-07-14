@@ -1,0 +1,133 @@
+/* Full Page */
+body {
+    margin: 0;
+    background: #f5f7fb;
+    font-family: "Inter", sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef4ff 100%);
+}
+
+/* Login Card */
+.login-card {
+    width: 360px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-3px);
+}
+
+.login-card h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.login-card p {
+    text-align: center;
+    color: #6b7280;
+    margin: 8px 0 28px;
+    font-size: 14px;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    transition: all 0.25s ease;
+}
+
+.input-box:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #111827;
+}
+
+.input-box input::placeholder {
+    color: #9ca3af;
+}
+
+/* Eye Icon */
+.eye {
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.eye:hover {
+    color: #2563eb;
+}
+
+/* Login Button */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.login-card button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Register Link */
+.bottom-link {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.bottom-link a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        width: 90%;
+        padding: 24px;
+    }
+}

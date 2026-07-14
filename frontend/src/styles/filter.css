@@ -1,0 +1,42 @@
+.filter-container{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:25px 0;
+}
+
+.filter-container button{
+
+    border:none;
+
+    background:white;
+
+    color:#2563eb;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.filter-container button:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
